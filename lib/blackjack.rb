@@ -33,6 +33,7 @@ end
 
 def hit?(card_total)
   prompt_user
+  get_user_input
   user_input = get_user_input
     if user_input == "h" 
       card_total += deal_card
@@ -51,11 +52,9 @@ def invalid_command
     end
 end
 
-#####################################################
-# get every test to pass before coding runner below #
-#####################################################
-
 def runner
-  # code runner here
+  initial_round
+  hit?(card_total)
+    until
 end
     
