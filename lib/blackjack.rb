@@ -52,9 +52,11 @@ def invalid_command
     end
 end
 
-def runner
+def runner(card_total)
   initial_round
+  until card_total > 21
   hit?(card_total)
-    until
+  display_card_total(card_total)
+  
 end
     
