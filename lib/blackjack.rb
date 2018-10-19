@@ -52,6 +52,7 @@ def invalid_command
 end
 
 def runner(card_total)
+  welcome
   initial_round
   until card_total > 21
       hit?(card_total)
