@@ -53,7 +53,7 @@ def invalid_command
     end
 end
 
-def runner(card_total)
+def runner
   welcome
   card_total = initial_round
   until card_total > 21
